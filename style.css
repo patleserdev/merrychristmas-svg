@@ -1,0 +1,43 @@
+
+body,html
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg
+{
+    /* background-image:url('./assets/images/composition.png');
+    background-repeat: no-repeat;
+    background-position: top right; */
+    background-color: #1b2a31;
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.balls
+{
+    display: flex;
+    border-top: 2px solid white;
+    border-radius: 50px;
+}
+
+.title
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.boule
+{
+    transform: scale(1);
+}
