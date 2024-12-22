@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 body,html
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lexend", serif;
+
 }
+
+
 .bg
 {
     /* background-image:url('./assets/images/composition.png');
@@ -13,7 +18,7 @@ body,html
     background-color: #1b2a31;
     width: 100%;
     height: 100vh;
-    background-size: contain;
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,19 +30,135 @@ body,html
     display: flex;
     border-top: 2px solid white;
     border-radius: 50px;
+
+    align-items: flex-start;
+    justify-content: center;
+    
 }
 
 .title
 {
     width: 100%;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 20px;
 }
+.title img
+{
+    object-fit: contain;
+}
 
 .boule
 {
     transform: scale(1);
+}
+
+footer
+{
+    color:#fff;
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    height: 20vh;
+}
+
+footer ul
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+
+footer li
+{
+    list-style-type: none;
+    margin: 20px;
+}
+
+footer a:link
+{
+    color:#fff;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) and (min-width : 1200px ) 
+{
+.bg
+{
+    height: 150vh;
+   width: 100%;
+}
+
+.balls
+{
+width: 80%;
+
+    
+}
+.boule
+{
+    transform: scale(0.5);
+}
+
+.title img
+{
+   transform: scale(0.5);
+}
+
+}
+@media (max-width: 700px) {
+    .bg
+{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+    height: 220vh;
+}
+
+    .title
+    {
+        height: 20vh;
+    }
+   
+    .title img
+    {
+       transform: scale(0.4);
+    }
+
+    .balls
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 2px solid white;
+    border-radius: 50px;
+    width: 100%;
+    
+}
+
+.boule
+{
+    margin-top: 50px;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+
+footer li
+{
+    margin: 10px;
+}
+
 }
