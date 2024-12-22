@@ -28,8 +28,7 @@ body,html
 .balls
 {
     display: flex;
-    border-top: 2px solid white;
-    border-radius: 50px;
+
 
     align-items: flex-start;
     justify-content: center;
@@ -44,7 +43,9 @@ body,html
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 20px;
+
+    border-bottom: 2px solid white;
+    border-radius: 50px;
 }
 .title img
 {
@@ -117,7 +118,7 @@ width: 80%;
     flex-direction: column;
     align-items: flex-start;
     justify-content:flex-start;
-    height: 220vh;
+    height: 200vh;
 }
 
     .title
@@ -127,7 +128,7 @@ width: 80%;
    
     .title img
     {
-       transform: scale(0.4);
+       transform: scale(0.5);
     }
 
     .balls
@@ -136,8 +137,7 @@ width: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border-top: 2px solid white;
-    border-radius: 50px;
+
     width: 100%;
     
 }
